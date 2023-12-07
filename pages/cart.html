@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Shirtify</title>
+    <link rel="icon" href="../img/mdb-favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/font-poppins.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid">
+      <a class="navbar-brand ml-5 mt-lg-0 me-auto" href="../index.html" style="font-size: 24px; font-weight: bold;">SHIRTIFY</a>
+      <button class="navbar-toggler" type="button" onclick="toggleNavbar()" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Search input -->
+      <div class="input-group rounded-3 me-3 mb-2 mb-lg-0">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+        </span>
+      </div>
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="shopping-page.html">SHOP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">CART</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="customer-pfp.html">PROFILE</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Right elements -->
+
+      <!-- Cart icon -->
+      <a class="text-reset me-3" href="cart.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+        </svg>
+      </a>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</div>
+</nav>
+<script>
+  function toggleNavbar() {
+    var navbarCollapse = document.getElementById("navbarSupportedContent");
+    if (navbarCollapse.classList.contains("show")) {
+      navbarCollapse.classList.remove("show");
+    } else {
+      navbarCollapse.classList.add("show");
+    }
+  }
+</script>
+
+<div class="container">
+    <div class="Cart" style="width: 1440px; height: 1091px; padding-left: 160px; padding-right: 160px; padding-top: 80px; padding-bottom: 80px; background: white; flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+  <div class="Title" style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 40px; display: flex">
+    <div class="Cart" style="color: black; font-size: 54px; font-weight: 500; line-height: 58px; word-wrap: break-word">Cart</div>
+    <div class="Process" style="justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
+      <div class="Process" style="width: 256px; padding-bottom: 26px; border-bottom: 2px #141718 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+        <div class="Frame75" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 17px; display: inline-flex">
+          <div class="Frame73" style="padding-left: 17px; padding-right: 17px; padding-top: 8px; padding-bottom: 8px; background: #23262F; border-radius: 40px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+            <div style="text-align: center; color: #FCFCFD; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">1</div>
+          </div>
+          <div class="ShoppingCart" style="flex: 1 1 0; color: #23262F; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">Shopping cart</div>
+        </div>
+      </div>
+      <div class="Process" style="width: 256px; padding-bottom: 26px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+        <div class="Frame75" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 17px; display: inline-flex">
+          <div class="Frame73" style="padding-left: 15px; padding-right: 15px; padding-top: 8px; padding-bottom: 8px; background: #B1B5C3; border-radius: 40px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+            <div style="text-align: center; color: #FCFCFD; font-size: 16px; font-weight: 600; line-height: 24px; word-wrap: break-word">2</div>
+          </div>
+          <div class="CheckoutDetails" style="flex: 1 1 0; color: #B1B5C3; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">Checkout details</div>
+        </div>
+      </div>
+      <div class="Process" style="width: 256px; padding-bottom: 26px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+        <div class="Frame75" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 17px; display: inline-flex">
+          <div class="Frame73" style="padding-left: 15px; padding-right: 15px; padding-top: 8px; padding-bottom: 8px; background: #B1B5C3; border-radius: 40px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+            <div style="text-align: center; color: #FCFCFD; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">3</div>
+          </div>
+          <div class="OrderComplete" style="flex: 1 1 0; color: #B1B5C3; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">Order complete</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Cart" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+    <div class="Cart" style="padding-top: 80px; padding-bottom: 80px; justify-content: flex-start; align-items: flex-start; gap: 64px; display: inline-flex">
+      <div class="Cart" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+        <div class="TableHeader" style="width: 643px; padding-bottom: 24px; border-bottom: 1px #6C7275 solid; justify-content: space-between; align-items: flex-start; display: inline-flex">
+          <div class="Product" style="color: #121212; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">Product</div>
+          <div class="Titles" style="height: 26px; justify-content: space-between; align-items: center; display: flex">
+            <div class="Quantity" style="color: #121212; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">Quantity</div>
+            <div class="Price" style="color: #121212; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">Price</div>
+            <div class="Subtotal" style="color: #121212; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">Subtotal</div>
+          </div>
+        </div>
+        <div class="ElementsCartProductCell" style="width: 643px; padding-top: 24px; padding-bottom: 24px; border-bottom: 1px #E8ECEF solid; justify-content: space-between; align-items: center; display: inline-flex">
+          <div class="CartItem" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+            <div class="Content" style="width: 316px; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+              <div class="Frame744" style="padding-top: 8px; padding-left: 8px; flex-direction: column; justify-content: flex-end; align-items: center; display: inline-flex">
+                <img class="Image2" style="width: 108px; height: 129px" src="../img/shopping-img-4.svg" />
+              </div>
+              <div class="Info" style="flex: 1 1 0; height: 82px; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div class="Product" style="width: 210px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; display: inline-flex">
+                  <div class="PureCanvasClassicWhiteTee" style="align-self: stretch; color: #141718; font-size: 14px; font-weight: 600; line-height: 22px; word-wrap: break-word">Pure Canvas Classic White Tee</div>
+                  <div class="ColorDefault" style="color: #6C7275; font-size: 12px; font-weight: 400; line-height: 20px; word-wrap: break-word">Color: Default</div>
+                  <div class="Button" style="justify-content: flex-start; align-items: center; gap: 2px; display: inline-flex">
+                    <div class="Content" style="justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+                      <div class="IconsCloseLine" style="width: 24px; height: 24px; padding: 5px; justify-content: center; align-items: center; display: flex">
+                        <div class="Shape" style="width: 14px; height: 14px; background: #6C7275"></div>
+                      </div>
+                      <div class="GetStarted" style="color: #6C7275; font-size: 14px; font-weight: 600; line-height: 22px; word-wrap: break-word">Remove</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Info" style="height: 32px; justify-content: space-between; align-items: center; display: flex">
+            <div class="QuantityButtonSmall" style="width: 80px; height: 32px; padding-left: 8px; padding-right: 8px; padding-top: 12px; padding-bottom: 12px; border-radius: 4px; border: 1px #6C7275 solid; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+              <div class="Content" style="width: 64px; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+                <div class="IconMinus" style="flex: 1 1 0; height: 16px; padding-left: 3.23px; padding-right: 3.44px; justify-content: center; align-items: center; display: inline-flex">
+                  <div class="Vector" style="width: 9.33px; height: 0px; border: 0.75px #121212 solid"></div>
+                </div>
+                <div class="GetStarted" style="text-align: center; color: #121212; font-size: 12px; font-weight: 600; line-height: 20px; word-wrap: break-word">2</div>
+                <div class="IconAdd" style="flex: 1 1 0; height: 16px; padding: 2.96px; justify-content: center; align-items: center; display: inline-flex">
+                  <img class="Union" style="width: 10.08px; height: 10.08px" src="" />
+                </div>
+              </div>
+            </div>
+            <div class="89900" style="text-align: right; color: #02021D; font-size: 18px; font-weight: 400; line-height: 30px; word-wrap: break-word">₱ 899.00</div>
+            <div class="179800" style="text-align: right; color: #02021D; font-size: 18px; font-weight: 600; line-height: 30px; word-wrap: break-word">₱ 1798.00</div>
+          </div>
+        </div>
+        <div class="ElementsCartProductCell" style="width: 643px; padding-top: 24px; padding-bottom: 24px; border-bottom: 1px #E8ECEF solid; justify-content: space-between; align-items: center; display: inline-flex">
+          <div class="CartItem" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+            <div class="Content" style="width: 316px; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+              <img class="Fa7dc74bb5dd1d6df0e5ea61ca36adRemovebgPreview2" style="width: 118px; height: 107px" src="../img/shopping-img-2.svg" />
+              <div class="Info" style="flex: 1 1 0; height: 82px; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div class="Product" style="width: 210px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; display: inline-flex">
+                  <div class="EcoPoloGreenOasis" style="align-self: stretch; color: #141718; font-size: 14px; font-weight: 600; line-height: 22px; word-wrap: break-word">Eco Polo Green Oasis </div>
+                  <div class="ColorDefault" style="color: #6C7275; font-size: 12px; font-weight: 400; line-height: 20px; word-wrap: break-word">Color: Default</div>
+                  <div class="Button" style="justify-content: flex-start; align-items: center; gap: 2px; display: inline-flex">
+                    <div class="Content" style="justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+                      <div class="IconsCloseLine" style="width: 24px; height: 24px; padding: 5px; justify-content: center; align-items: center; display: flex">
+                        <div class="Shape" style="width: 14px; height: 14px; background: #6C7275"></div>
+                      </div>
+                      <div class="GetStarted" style="color: #6C7275; font-size: 14px; font-weight: 600; line-height: 22px; word-wrap: break-word">Remove</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Info" style="height: 32px; justify-content: space-between; align-items: center; display: flex">
+            <div class="QuantityButtonSmall" style="width: 80px; height: 32px; padding-left: 8px; padding-right: 8px; padding-top: 12px; padding-bottom: 12px; border-radius: 4px; border: 1px #6C7275 solid; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+              <div class="Content" style="width: 64px; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+                <div class="IconMinus" style="flex: 1 1 0; height: 16px; padding-left: 3.23px; padding-right: 3.44px; justify-content: center; align-items: center; display: inline-flex">
+                  <div class="Vector" style="width: 9.33px; height: 0px; border: 0.75px #121212 solid"></div>
+                </div>
+                <div class="GetStarted" style="text-align: center; color: #121212; font-size: 12px; font-weight: 600; line-height: 20px; word-wrap: break-word">2</div>
+                <div class="IconAdd" style="flex: 1 1 0; height: 16px; padding: 2.96px; justify-content: center; align-items: center; display: inline-flex">
+                  <img class="Union" style="width: 10.08px; height: 10.08px" src="" />
+                </div>
+              </div>
+            </div>
+            <div class="69900" style="text-align: right; color: #02021D; font-size: 18px; font-weight: 400; line-height: 30px; word-wrap: break-word">₱ 699.00</div>
+            <div class="139800" style="text-align: right; color: #02021D; font-size: 18px; font-weight: 600; line-height: 30px; word-wrap: break-word">₱ 1398.00</div>
+          </div>
+        </div>
+      </div>
+      <div class="ElementsCartSummary" style="width: 413px; padding: 24px; background: white; border-radius: 6px; border: 1px #6C7275 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+        <div class="CartSummary" style="align-self: stretch; color: #141718; font-size: 20px; font-weight: 500; line-height: 28px; word-wrap: break-word">Cart summary</div>
+        <div class="Content" style="align-self: stretch; height: 384px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+          <div class="Fields" style="align-self: stretch; height: 332px; padding-bottom: 32px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+            <div class="ShippingOptions" style="align-self: stretch; height: 196px; padding-bottom: 16px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+              <div class="Elements" style="width: 365px; padding-left: 16px; padding-right: 16px; padding-top: 13px; padding-bottom: 13px; background: #F3F5F7; border-radius: 4px; border: 1px #141718 solid; justify-content: flex-start; align-items: center; gap: 395px; display: inline-flex">
+                <div class="Content" style="justify-content: center; align-items: flex-start; gap: 156px; display: flex">
+                  <div class="RadioButton" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                    <div class="RadioButton" style="width: 18px; height: 18px; padding: 4px; border-radius: 100px; border: 1px #121212 solid; justify-content: center; align-items: center; display: flex">
+                      <div class="Check" style="width: 10px; height: 10px; background: #121212; border-radius: 9999px"></div>
+                    </div>
+                    <div class="FreeShipping" style="color: #141718; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Free shipping</div>
+                  </div>
+                  <div class="000" style="text-align: right; color: #141718; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">$0.00</div>
+                </div>
+              </div>
+              <div class="Elements" style="width: 365px; padding-left: 16px; padding-right: 16px; padding-top: 13px; padding-bottom: 13px; background: #FEFEFE; border-radius: 4px; border: 1px #6C7275 solid; justify-content: flex-start; align-items: center; gap: 395px; display: inline-flex">
+                <div class="Content" style="justify-content: center; align-items: flex-start; gap: 104px; display: flex">
+                  <div class="RadioButton" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                    <div class="RadioButton" style="width: 18px; height: 18px; position: relative; border-radius: 100px; border: 1px #121212 solid"></div>
+                    <div class="FreeShipping" style="color: #141718; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Express shipping</div>
+                  </div>
+                  <div class="000" style="text-align: right; color: #02021D; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">+₱ 59.00</div>
+                </div>
+              </div>
+              <div class="Elements" style="width: 365px; padding-left: 16px; padding-right: 16px; padding-top: 13px; padding-bottom: 13px; background: #FEFEFE; border-radius: 4px; border: 1px #6C7275 solid; justify-content: flex-start; align-items: center; gap: 395px; display: inline-flex">
+                <div class="Content" style="justify-content: center; align-items: flex-start; gap: 191px; display: flex">
+                  <div class="RadioButton" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                    <div class="RadioButton" style="width: 18px; height: 18px; position: relative; border-radius: 100px; border: 1px #121212 solid"></div>
+                    <div class="FreeShipping" style="color: #141718; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Pick Up</div>
+                  </div>
+                  <div class="000" style="text-align: right; color: #141718; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">%21.00</div>
+                </div>
+              </div>
+            </div>
+            <div class="ElementsOrderSummaryInfoField" style="align-self: stretch; height: 52px; padding-top: 13px; padding-bottom: 13px; border-bottom: 1px #EAEAEA solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+              <div class="Content" style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 160px; display: inline-flex">
+                <div class="TitleAmount" style="justify-content: center; align-items: flex-start; gap: 220px; display: flex">
+                  <div class="Title" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                    <div class="Label" style="color: #141718; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Subtotal</div>
+                  </div>
+                  <div class="Value" style="text-align: right; color: #02021D; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">₱ 3196.00</div>
+                </div>
+              </div>
+            </div>
+            <div class="ElementsOrderSummaryInfoField" style="align-self: stretch; height: 52px; padding-top: 13px; padding-bottom: 13px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+              <div class="Content" style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 160px; display: inline-flex">
+                <div class="TitleAmount" style="justify-content: center; align-items: flex-start; gap: 154px; display: flex">
+                  <div class="Label" style="color: #141718; font-size: 20px; font-weight: 600; line-height: 32px; word-wrap: break-word">Total</div>
+                  <div class="Value" style="text-align: right; color: #02021D; font-size: 32px; font-weight: 600; line-height: 32px; word-wrap: break-word">₱ 3196.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Button" style="width: 365px; padding-left: 26px; padding-right: 26px; padding-top: 10px; padding-bottom: 10px; background: #141718; border-radius: 8px; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+            <a href="checkout.html" style="text-align: center; color: white; font-size: 18px; font-weight: 500; line-height: 32px; word-wrap: break-word">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ElementsCartCouponForm" style="height: 129px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+      <div class="Title" style="align-self: stretch; height: 61px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 7px; display: flex">
+        <div class="HaveACoupon" style="align-self: stretch; color: #141718; font-size: 20px; font-weight: 500; line-height: 28px; word-wrap: break-word">Have a coupon?</div>
+        <div class="AddYourCodeForAnInstantCartDiscount" style="align-self: stretch; color: #6C7275; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Add your code for an instant cart discount</div>
+      </div>
+      <div class="FormInput" style="width: 424px; height: 52px; padding-left: 16px; padding-right: 16px; border: 1px #6C7275 solid; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; display: flex">
+        <div class="Input" style="align-self: stretch; height: 52px; border-bottom: 1px rgba(108.11, 113.95, 116.88, 0.50) solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+          <div class="IconInput" style="flex: 1 1 0; height: 28px; justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+            <input type="checkbox">
+            <div class="YourEmail" style="flex: 1 1 0; color: #6C7275; font-size: 16px; font-weight: 500; line-height: 28px; word-wrap: break-word">Coupon Code</div>
+          </div>
+          <div class="Button" style="justify-content: flex-start; align-items: center; gap: 2px; display: flex">
+            <div class="Content" style="justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+              <div class="GetStarted" style="color: #141718; font-size: 16px; font-weight: 500; line-height: 28px; word-wrap: break-word">Apply</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Footer -->
+<section>
+  <footer class="bg-success text-white text-center text-lg-start ">
+    <h2 class="text-center m-5 p-5">CONTACT US</h2>
+    <div class="container p-4 d-flex justify-content-center">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">ADDRESS</h5>
+          <p>Sariaya, Quezon Philippines</p>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">PHONE NUMBER</h5>
+          <p>+63912345678</p>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">EMAIL</h5>
+          <p>shirtify01@gmaill.com</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center py-3" id="copyright">
+      <!-- Copyright year will appear here -->
+    </p>
+    
+    <script>
+      const currentYear = new Date().getFullYear();
+      const copyright = document.getElementById('copyright');
+      copyright.textContent = `Copyrights © ${currentYear} Shirtify`;
+    </script>
+  </footer>
+</section>
+<!-- /Footer -->
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  </body>
+</html>

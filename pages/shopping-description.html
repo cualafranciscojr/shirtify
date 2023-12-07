@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Shirtify</title>
+    <link rel="icon" href="../img/mdb-favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/font-poppins.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid">
+      <a class="navbar-brand ml-5 mt-lg-0 me-auto" href="../index.html" style="font-size: 24px; font-weight: bold;">SHIRTIFY</a>
+      <button class="navbar-toggler" type="button" onclick="toggleNavbar()" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Search input -->
+      <div class="input-group rounded-3 me-3 mb-2 mb-lg-0">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+        </span>
+      </div>
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="shopping-page.html">SHOP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">CART</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="customer-pfp.html">PROFILE</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Right elements -->
+
+      <!-- Cart icon -->
+      <a class="text-reset me-3" href="cart.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+        </svg>
+      </a>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</div>
+</nav>
+<script>
+  function toggleNavbar() {
+    var navbarCollapse = document.getElementById("navbarSupportedContent");
+    if (navbarCollapse.classList.contains("show")) {
+      navbarCollapse.classList.remove("show");
+    } else {
+      navbarCollapse.classList.add("show");
+    }
+  }
+</script>
+
+<div class="container">
+    <div class="row">
+<div class="HeroPreview" style="width: 1478px; height: 688px; padding-top: 40px; padding-bottom: 80px; padding-left: 135px; padding-right: 77px; background: white; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+    <div class="Content" style="justify-content: flex-start; align-items: flex-start; gap: 60px; display: inline-flex">
+      <div class="Rectangle6018 col-12 col-sm-12 d-flex justify-content-center align-items-center" style="width: 866px; height: 559px; background: #D9D9D9">
+        <img src="../img/shirt1.svg" alt="" style="width: 466px; ">
+      </div>
+      <div class="Information col-12 col-sm-12" style="height: 568px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 54px; display: inline-flex">
+        <div class="Details col-12 col-sm-12" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: flex">
+          <div class="Model" style="justify-content: flex-end; align-items: center; gap: 70px; display: inline-flex">
+            <div class="Model " style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+              <div class="PureCanvasClassicWhiteTee" style="width: 200px; color: #02021D; font-size: 20px; font-weight: 400; line-height: 24px; word-wrap: break-word">Pure Canvas Classic White Tee</div>
+              <div class="Model" style="justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                <div class="Review" style="justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+                  <div class="IconsBlackUnfillStar" style="width: 16px; height: 16px; padding-top: 1.33px; padding-bottom: 1.99px; padding-left: 1.33px; padding-right: 1.33px; justify-content: center; align-items: center; display: flex">
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                  <div class="IconsBlackUnfillStar" style="width: 16px; height: 16px; padding-top: 1.33px; padding-bottom: 1.99px; padding-left: 1.33px; padding-right: 1.33px; justify-content: center; align-items: center; display: flex">
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                  <div class="IconsBlackUnfillStar" style="width: 16px; height: 16px; padding-top: 1.33px; padding-bottom: 1.99px; padding-left: 1.33px; padding-right: 1.33px; justify-content: center; align-items: center; display: flex">
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                  <div class="IconsBlackUnfillStar" style="width: 16px; height: 16px; padding-top: 1.33px; padding-bottom: 1.99px; padding-left: 1.33px; padding-right: 1.33px; justify-content: center; align-items: center; display: flex">
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                  <div class="IconsBlackUnfillStar" style="width: 16px; height: 16px; padding-top: 1.33px; padding-bottom: 1.99px; padding-left: 1.33px; padding-right: 1.33px; justify-content: center; align-items: center; display: flex">
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                  
+                 
+                </div>
+                <div class="73205" style="width: 80px; color: #02021D; font-size: 14px; font-weight: 400; line-height: 18px; word-wrap: break-word">4.7(3205)</div>
+              </div>
+            </div>
+            <div class="89900" style="width: 100px; text-align: right; color: #02021D; font-size: 16px; font-family: Montserrat; font-weight: 700; word-wrap: break-word">₱ 899.00</div>
+          </div>
+          <div class="SelectGenderSize" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+            <div class="SelectGenderSize" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+              <div class="SelectGenderSize" style="justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
+                <div class="Size" style="width: 196px; color: #02021D; font-size: 18px; font-weight: 400; line-height: 22px; word-wrap: break-word">Size</div>
+                <div class="SizeGuide" style="justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+                  <div class="SizeGuide" style="width: 116px; text-align: right; color: #75869C; font-size: 18px; font-weight: 400; line-height: 22px; word-wrap: break-word">Size Guide</div>
+                  <div class="IconsBlackUnfillAlertCircle" style="width: 20px; height: 20px; position: relative">
+                    <div class="Vector" style="width: 16.67px; height: 16.67px; left: 1.67px; top: 1.67px; position: absolute; border: 1.50px #75869C solid"></div>
+                    <div class="Vector" style="width: 0px; height: 3.33px; left: 10px; top: 6.67px; position: absolute; border: 1.50px #75869C solid"></div>
+                    <div class="Vector" style="width: 0.01px; height: 0px; left: 10px; top: 13.33px; position: absolute; border: 1.50px #75869C solid"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Size" style="padding-left: 24px; padding-right: 24px; padding-top: 12px; padding-bottom: 12px; background: white; border-radius: 8px; border: 1px #E3E5ED solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+              <div class="Content" style="justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                <div class="Us9" style="width: 286px; color: #02021D; font-size: 16px; font-weight: 400; line-height: 22px; word-wrap: break-word">US 9</div>
+                <div class="IconsBlackUnfillChevronDown" style="width: 20px; height: 20px; padding-left: 5px; padding-right: 5px; justify-content: center; align-items: center; display: flex">
+                  <div class="Vector" style="width: 10px; height: 5px; border: 2px #02021D solid"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Details" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+            <div class="AddToBag145" style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 25px; display: flex">
+              <div class="Button" style="width: 364px; padding-left: 40px; padding-right: 40px; padding-top: 10px; padding-bottom: 10px; background: #02021D; border-radius: 32px; border: 1px black solid; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+                <div class="IconsHeartLine" style="width: 24px; height: 24px; padding-top: 3px; padding-bottom: 3.21px; padding-left: 1px; padding-right: 1px; justify-content: center; align-items: center; display: flex">
+                  <div class="Shape" style="width: 22px; height: 17.79px; background: white"></div>
+                </div>
+                <a href="wishlist.html"><div class="Wishlist" style="text-align: center; color: white; font-size: 18px; font-weight: 500; line-height: 32px; word-wrap: break-word">Wishlist</div></a>
+              </div>
+              <div class="Button" style="width: 370px; padding-left: 24px; padding-right: 24px; padding-top: 17px; padding-bottom: 17px; background: #02021D; border-radius: 32px; justify-content: center; align-items: flex-start; gap: 10px; display: inline-flex">
+                <a href="cart.html"><div class="Button" style="width: 133px; text-align: center; color: white; font-size: 16px; font-weight: 400; line-height: 22px; word-wrap: break-word">Add to cart</div></a>
+              </div>
+              <div class="PaymentsOf3625Using" style="justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                <div class="PaymentsOf19900Using" style="text-align: center"><span style="color: #02021D; font-size: 12px; font-weight: 400; line-height: 16px; word-wrap: break-word">4 payments of  </span><span style="color: #02021D; font-size: 12px; font-weight: 700; line-height: 16px; word-wrap: break-word">₱ 199.00 </span><span style="color: #02021D; font-size: 12px; font-weight: 400; line-height: 16px; word-wrap: break-word">using</span></div>
+                <div class="Shop" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+                  <div class="Shop" style="text-align: center; color: #02021D; font-size: 12px; font-weight: 500; line-height: 16px; word-wrap: break-word">Shop</div>
+                  <div class="Pay" style="padding-left: 8px; padding-right: 8px; padding-top: 2px; padding-bottom: 2px; background: #02021D; border-radius: 8px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+                    <div class="Pay" style="text-align: center; color: white; font-size: 12px; font-weight: 400; line-height: 16px; word-wrap: break-word">Pay</div>
+                  </div>
+                  <div class="Or" style="text-align: center; color: #02021D; font-size: 12px; font-weight: 400; line-height: 16px; word-wrap: break-word">Or</div>
+                  <div class="Afterpay" style="text-align: center; color: #02021D; font-size: 12px; font-weight: 500; line-height: 16px; word-wrap: break-word">afterpay</div>
+                </div>
+              </div>
+              <div class="FreeShippingOnOrdersOver69900" style="text-align: center"><span style="color: #02021D; font-size: 14px; font-weight: 400; line-height: 18px; word-wrap: break-word">Free shipping  on orders over </span><span style="color: #02021D; font-size: 14px; font-weight: 400; line-height: 18px; word-wrap: break-word">₱ 699.00</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+  <div class="Tabs" style="width: 1440px; height: 1563px; padding-left: 160px; padding-right: 160px; padding-top: 40px; padding-bottom: 40px; background: white; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 48px; display: inline-flex">
+    <div class="ReviewSection" style="height: 1448px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: flex">
+      <div class="ReviewSection" style="width: 1120px; height: 214px; position: relative">
+        <div class="Review" style="left: 0px; top: 0px; position: absolute; flex-direction: column; justify-content: center; align-items: center; gap: 24px; display: inline-flex">
+          <div class="CustomerReviews" style="align-self: stretch; color: #23262F; font-size: 28px; font-family: Poppins; font-weight: 500; line-height: 34px; word-wrap: break-word">Customer Reviews</div>
+          <div class="Review" style="height: 54px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+            <div class="Frame738" style="justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+              <div class="RatingGroup" style="height: 16px; justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <div class="Reviews" style="color: #141718; font-size: 12px; font-weight: 400; line-height: 20px; word-wrap: break-word">11 Reviews</div>
+            </div>
+            <div class="Frame59" style="justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+              <div class="BeTheFirstToReview" style="color: white; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Be the first to review</div>
+              <div class="TrayTable" style="color: #23262F; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">Tray Table</div>
+            </div>
+          </div>
+        </div>
+        <div class="FeedbackFormOffOn" style="height: 72px; left: 0px; top: 142px; position: absolute; flex-direction: column; justify-content: center; align-items: flex-end; display: inline-flex">
+          <div class="FeedbackForm" style="width: 1120px; padding-top: 16px; padding-bottom: 16px; padding-left: 24px; padding-right: 16px; background: #FEFEFE; border-radius: 16px; border: 2px #E8ECEF solid; justify-content: space-between; align-items: center; display: inline-flex">
+            <div class="Line38" style="width: 24px; height: 0px; transform: rotate(90deg); transform-origin: 0 0; border: 2px #C0C0C0 solid"></div>
+            <div class="ShareYourThoughts" style="color: white; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Share your thoughts</div>
+            <div class="Buttons" style="justify-content: center; align-items: center; gap: 16px; display: flex">
+              
+              <div class="Button" style="padding-left: 40px; padding-right: 40px; padding-top: 6px; padding-bottom: 6px; background: #141718; border-radius: 80px; justify-content: center; align-items: center; gap: 8px; display: flex">
+                <div class="ShowMore" style="text-align: center; color: white; font-size: 16px; font-weight: 500; line-height: 28px; word-wrap: break-word">Write Review</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="EmojiPopup" style="left: 892px; top: 134px; position: absolute; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+          <div class="Arrow" style="width: 16px; height: 8px; background: #FCFCFD"></div>
+        </div>
+      </div>
+      <div class="CommentSection" style="width: 1120px; height: 1194px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: flex">
+        <div class="CommentsTitle" style="width: 1120px; justify-content: flex-start; align-items: center; gap: 728px; display: inline-flex">
+          <div class="Reviews" style="color: black; font-size: 28px; font-family: Poppins; font-weight: 500; line-height: 34px; word-wrap: break-word">15 Reviews</div>
+        </div>
+        <div class="Comments" style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 24px; display: flex">
+          <div class="User" style="width: 1120px; padding-bottom: 24px; border-bottom: 1px #E8ECEF solid; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
+            <img class="1503945TransparentUserPngDefaultUserImagePngPngRemovebgPreview1" style="width: 83px; height: 69px" src="https://via.placeholder.com/83x69" />
+            <div class="NameAndPosition" style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+              <div class="NameAndFeedback" style="height: 132px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div class="NameStars" style="height: 64px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                  <div class="Name" style="justify-content: center; align-items: center; gap: 4px; display: inline-flex">
+                    <div class="User" style="color: #141718; font-size: 20px; font-weight: 600; line-height: 32px; word-wrap: break-word">User</div>
+                    <div style="color: #141718; font-size: 20px; font-weight: 600; line-height: 32px; word-wrap: break-word">3632**</div>
+                  </div>
+                  <div class="StartRating" style="justify-content: flex-start; align-items: flex-start; gap: 2px; display: inline-flex">
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="LoremIpsumDolorSitAmetConsecteturAdipiscingElitSedDoEiusmodTemporIncididuntUtLaboreEtDoloreMagnaAliquaSodalesUtEtiamSitAmetNislPurus" style="width: 1008px; color: #353945; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sodales ut etiam sit amet nisl purus.</div>
+              </div>
+              <div class="Frame724" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                <div class="About1HourAgo" style="color: white; font-size: 12px; font-weight: 400; line-height: 20px; word-wrap: break-word">about 1 hour ago</div>
+                <div class="Like" style="color: #23262F; font-size: 12px; font-weight: 600; line-height: 20px; word-wrap: break-word">Like</div>
+                <div class="Reply" style="color: #23262F; font-size: 12px; font-weight: 600; line-height: 20px; word-wrap: break-word">Reply</div>
+              </div>
+            </div>
+          </div>
+          <div class="User" style="width: 1120px; padding-bottom: 24px; border-bottom: 1px #E8ECEF solid; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
+            <img class="1503945TransparentUserPngDefaultUserImagePngPngRemovebgPreview1" style="width: 83px; height: 69px" src="https://via.placeholder.com/83x69" />
+            <div class="NameAndPosition" style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+              <div class="NameAndFeedback" style="height: 132px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div class="NameStars" style="height: 64px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                  <div class="Name" style="justify-content: center; align-items: center; gap: 4px; display: inline-flex">
+                    <div class="User" style="color: #141718; font-size: 20px; font-weight: 600; line-height: 32px; word-wrap: break-word">User</div>
+                    <div style="color: #141718; font-size: 20px; font-weight: 600; line-height: 32px; word-wrap: break-word">2564**</div>
+                  </div>
+                  <div class="StartRating" style="justify-content: flex-start; align-items: flex-start; gap: 2px; display: inline-flex">
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                        <span class="fa fa-star"></span> 
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="LoremIpsumDolorSitAmetConsecteturAdipiscingElitSedDoEiusmodTemporIncididuntUtLaboreEtDoloreMagnaAliquaSodalesUtEtiamSitAmetNislPurus" style="width: 1008px; color: #353945; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sodales ut etiam sit amet nisl purus.</div>
+              </div>
+              <div class="Frame724" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                <div class="About1HourAgo" style="color: white; font-size: 12px; font-weight: 400; line-height: 20px; word-wrap: break-word">about 1 hour ago</div>
+                <div class="Like" style="color: #23262F; font-size: 12px; font-weight: 600; line-height: 20px; word-wrap: break-word">Like</div>
+                <div class="Reply" style="color: #23262F; font-size: 12px; font-weight: 600; line-height: 20px; word-wrap: break-word">Reply</div>
+              </div>
+            </div>
+          </div>
+          <div class="User" style="width: 1120px; padding-bottom: 24px; border-bottom: 1px #E8ECEF solid; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
+            <img class="1503945TransparentUserPngDefaultUserImagePngPngRemovebgPreview1" style="width: 83px; height: 69px" src="https://via.placeholder.com/83x69" />
+            <div class="NameAndPosition" style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+              <div class="NameAndFeedback" style="height: 132px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div class="NameStars" style="height: 64px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                  <div class="Name" style="justify-content: center; align-items: center; gap: 4px; display: inline-flex">
+                    <div class="User" style="color: #141718; font-size: 20px; font-weight: 600; line-height: 32px; word-wrap: break-word">User</div>
+                    <div style="color: #141718; font-size: 20px; font-weight: 600; line-height: 32px; word-wrap: break-word">1241**</div>
+                  </div>
+                  <div class="StartRating" style="justify-content: flex-start; align-items: flex-start; gap: 2px; display: inline-flex">
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="LoremIpsumDolorSitAmetConsecteturAdipiscingElitSedDoEiusmodTemporIncididuntUtLaboreEtDoloreMagnaAliquaSodalesUtEtiamSitAmetNislPurus" style="width: 1008px; color: #353945; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sodales ut etiam sit amet nisl purus.</div>
+              </div>
+              <div class="Frame724" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                <div class="About1HourAgo" style="color: white; font-size: 12px; font-weight: 400; line-height: 20px; word-wrap: break-word">about 1 hour ago</div>
+                <div class="Like" style="color: #23262F; font-size: 12px; font-weight: 600; line-height: 20px; word-wrap: break-word">Like</div>
+                <div class="Reply" style="color: #23262F; font-size: 12px; font-weight: 600; line-height: 20px; word-wrap: break-word">Reply</div>
+              </div>
+            </div>
+          </div>
+          <div class="User" style="width: 1120px; padding-bottom: 24px; border-bottom: 1px #E8ECEF solid; justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex">
+            <img class="1503945TransparentUserPngDefaultUserImagePngPngRemovebgPreview1" style="width: 83px; height: 69px" src="https://via.placeholder.com/83x69" />
+            <div class="NameAndPosition" style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+              <div class="NameAndFeedback" style="height: 132px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                <div class="NameStars" style="height: 64px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
+                  <div class="Name" style="justify-content: center; align-items: center; gap: 4px; display: inline-flex">
+                    <div class="User" style="color: #141718; font-size: 20px; font-weight: 600; line-height: 32px; word-wrap: break-word">User</div>
+                    <div style="color: #141718; font-size: 20px; font-weight: 600; line-height: 32px; word-wrap: break-word">4231**</div>
+                  </div>
+                  <div class="StartRating" style="justify-content: flex-start; align-items: flex-start; gap: 2px; display: inline-flex">
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="IconsStarFilled" style="width: 16px; height: 16px; padding-top: 1.68px; padding-bottom: 1.38px; padding-left: 1.03px; padding-right: 1.03px; justify-content: center; align-items: center; display: flex">
+                       <span class="fa fa-star checked"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="LoremIpsumDolorSitAmetConsecteturAdipiscingElitSedDoEiusmodTemporIncididuntUtLaboreEtDoloreMagnaAliquaSodalesUtEtiamSitAmetNislPurus" style="width: 1008px; color: #353945; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sodales ut etiam sit amet nisl purus.</div>
+              </div>
+              <div class="Frame724" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                <div class="About1HourAgo" style="color: white; font-size: 12px; font-weight: 400; line-height: 20px; word-wrap: break-word">about 1 hour ago</div>
+                <div class="Like" style="color: #23262F; font-size: 12px; font-weight: 600; line-height: 20px; word-wrap: break-word">Like</div>
+                <div class="Reply" style="color: #23262F; font-size: 12px; font-weight: 600; line-height: 20px; word-wrap: break-word">Reply</div>
+              </div>
+            </div>
+          </div>
+          <div class="Button" style="padding-left: 40px; padding-right: 40px; padding-top: 6px; padding-bottom: 6px; border-radius: 80px; border: 1px #141718 solid; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+            <div class="ShowMore" style="text-align: center; color: #141718; font-size: 16px; font-weight: 500; line-height: 28px; word-wrap: break-word">Load more</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<section>
+  <footer class="bg-success text-white text-center text-lg-start ">
+    <h2 class="text-center m-5 p-5">CONTACT US</h2>
+    <div class="container p-4 d-flex justify-content-center">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">ADDRESS</h5>
+          <p>Sariaya, Quezon Philippines</p>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">PHONE NUMBER</h5>
+          <p>+63912345678</p>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">EMAIL</h5>
+          <p>shirtify01@gmaill.com</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center py-3" id="copyright">
+      <!-- Copyright year will appear here -->
+    </p>
+    
+    <script>
+      const currentYear = new Date().getFullYear();
+      const copyright = document.getElementById('copyright');
+      copyright.textContent = `Copyrights © ${currentYear} Shirtify`;
+    </script>
+  </footer>
+</section>
+<!-- /Footer -->
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  </body>
+</html>

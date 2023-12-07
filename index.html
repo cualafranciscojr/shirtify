@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Shirtify</title>
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font-poppins.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid">
+      <a class="navbar-brand ml-5 mt-lg-0 me-auto" href="index.html" style="font-size: 24px; font-weight: bold;">SHIRTIFY</a>
+      <button class="navbar-toggler" type="button" onclick="toggleNavbar()" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Search input -->
+      <div class="input-group rounded-3 me-3 mb-2 mb-lg-0">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+        </span>
+      </div>
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="pages/shopping-page.html">SHOP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/cart.html">CART</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/customer-pfp.html">PROFILE</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Right elements -->
+
+      <!-- Cart icon -->
+      <a class="text-reset me-3" href="pages/cart.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+        </svg>
+      </a>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</div>
+</nav>
+<script>
+  function toggleNavbar() {
+    var navbarCollapse = document.getElementById("navbarSupportedContent");
+    if (navbarCollapse.classList.contains("show")) {
+      navbarCollapse.classList.remove("show");
+    } else {
+      navbarCollapse.classList.add("show");
+    }
+  }
+</script>
+
+<!-- Hero section -->
+<section class="bg-success">
+  <div class="container ">
+    <div class="row align-items-center">
+      <div class="col-md-6 ">
+        <div class="hero-one p-3 text-center text-md-start border border-3 border-white rounded-3 d-flex flex-column justify-content-center align-items-center">
+          <h2>Welcome to SHIRTIFY!</h2>
+          <p class="text-white">BEST QUALITY SHIRT</p>
+          <h2 class="text-white">PERFECT FOR<br> EVERY OCCASION</h2>
+          <p class="text-warning">Starting from <span class="text-white">₱699.00</span></p>
+          <button type="button" class="btn btn-gray" data-mdb-ripple-init data-mdb-ripple-color="dark" style="background-color: transparent;">Shop Now</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="people text-center">
+          <img src="img/people.svg" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Hero section -->
+
+
+
+<!-- Best-selling -->
+<section class="best-selling py-5 bg-gray" style="background-image: url(img/bg1.svg); background-size:cover;">
+  <div class="container">
+    <h2 class="text-center mb-4">BEST SELLING</h2>
+    <span>
+      <div class="Line40" style="max-width: 100%; height: 0px; border: 1px rgba(134, 131, 131, 0.75) solid"></div>
+    </span>
+    <div class="row m-3">
+      <div class="col-md-4 mb-4">
+        <div class="text-center bg-light-gray p-4 rounded-20">
+          <img src="img/shirt1.svg" alt="Pure Canvas Classic White Tee" class="img-fluid d-block mx-auto mb-3 img-equal-size">
+          <div class="text-wrap position-absolute w-100" style="top: 100%; margin-top: 10px;">
+            <span class="font-weight-bold">Pure Canvas<br> Classic White<br> Tee</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="text-center position-relative">
+            <div class="bg-light-gray p-4 rounded-20">
+                <img src="img/shirt3.svg" alt="EcoPolo Green Oasis" class="img-fluid d-block mx-auto mb-3 img-equal-size">
+            </div>
+            <div class="text-wrap position-absolute w-100" style="top: 100%; margin-top: 10px;">
+                <span class="font-weight-bold">EcoPolo<br> Green Oasis</span>
+            </div>
+        </div>
+    </div>    
+      <div class="col-md-4 mb-4">
+        <div class="text-center bg-light-gray p-4 rounded-20">
+          <img src="img/shirt3.svg" alt="Blue Horizon Polo Elegance" class="img-fluid d-block mx-auto mb-3 img-equal-size">
+          <div class="text-wrap position-absolute w-100" style="top: 100%; margin-top: 10px;">
+            <span class="font-weight-bold">Blue Horizon<br> Polo Elegance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Best-selling -->
+
+
+<!-- Products -->
+<section class="products">
+  <div class="container">
+    <h2 class="text-center  m-3 p-5">PRODUCTS</h2>
+    <span>
+      <div class="Line40" style="max-width: 100%; height: 0px; border: 1px rgba(134, 131, 131, 0.75) solid"></div>
+    </span>
+    <div class="row  m-3 p-3">
+      <div class="col-lg-3">
+        <div class="Group1 mb-3" style="width: 256px; height: 400px; position: relative">
+            <div class=" Rectangle7" style="width: 256px; height: 400px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 8px; border: 0.40px #A4A4A4 solid">
+                <img src="img/shopping-img-1.svg" alt="" style="margin-left: 20px; margin-top: 27px;">
+            </div>
+            <div class="BlueEssencePlainPolo" style="left: 20px; top: 255px; position: absolute; color: black; font-size: 16px; font-weight: 700; word-wrap: break-word">Blue Essence Plain Polo <br> <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span></div>
+            <div class="99900" style="left: 24px; top: 310px; position: absolute; color: black; font-size: 16px; font-weight: 700; word-wrap: break-word">₱ 999.00</div>
+            <div class="Group2" style="width: 90px; height: 18px; left: 24px; top: 286px; position: absolute">
+            </div>
+            <div class="Rectangle15" style="width: 108px; height: 32px; left: 22px; top: 351px; position: absolute; background: #E68989; border-radius: 8px"></div>
+            <div class="BuyNow" style="left: 33px; top: 357px; position: absolute; color: white; font-size: 16px; font-weight: 700; word-wrap: break-word">BUY NOW</div>
+        </div>
+    </div>
+    
+    <div class="col-lg-3">
+        <div class="Group1 mb-3" style="width: 256px; height: 400px; position: relative">
+            <div class="Rectangle7" style="width: 256px; height: 400px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 8px; border: 0.40px #A4A4A4 solid">
+                <img src="img/shopping-img-2.svg" alt="" style="margin-left: 20px; margin-top: 30px;">
+            </div>
+            <div class="BlueEssencePlainPolo" style="left: 20px; top: 255px; position: absolute; color: black; font-size: 16px; font-weight: 700; word-wrap: break-word">Raspberry Sunset Polo <br> <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span></div>
+            <div class="99900" style="left: 24px; top: 310px; position: absolute; color: black; font-size: 16px; font-weight: 700; word-wrap: break-word">₱ 899.00</div>
+            <div class="Group2" style="width: 90px; height: 18px; left: 24px; top: 286px; position: absolute">
+            </div>
+            <div class="Rectangle15" style="width: 108px; height: 32px; left: 22px; top: 351px; position: absolute; background: #E68989; border-radius: 8px"></div>
+            <div class="BuyNow" style="left: 33px; top: 357px; position: absolute; color: white; font-size: 16px; font-weight: 700; word-wrap: break-word">BUY NOW</div>
+        </div>
+    </div>
+
+    <div class="col-lg-3">
+        <div class="Group1 mb-3" style="width: 256px; height: 400px; position: relative">
+            <div class="Rectangle7" style="width: 256px; height: 400px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 8px; border: 0.40px #A4A4A4 solid">
+                <img src="img/shopping-img-3.svg" alt="" style="margin-left: 15px; ">
+            </div>
+            <div class="BlueEssencePlainPolo" style="left: 20px; top: 255px; position: absolute; color: black; font-size: 16px; font-weight: 700; word-wrap: break-word">Sunshine Glow Polo <br> <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span></div>
+            <div class="99900" style="left: 24px; top: 310px; position: absolute; color: black; font-size: 16px; font-weight: 700; word-wrap: break-word">₱ 799.00</div>
+            <div class="Group2" style="width: 90px; height: 18px; left: 24px; top: 286px; position: absolute">
+            </div>
+            <div class="Rectangle15" style="width: 108px; height: 32px; left: 22px; top: 351px; position: absolute; background: #E68989; border-radius: 8px">
+                
+            </div>
+            <div class="BuyNow" style="left: 33px; top: 357px; position: absolute; color: white; font-size: 16px; font-weight: 700; word-wrap: break-word">BUY NOW</div>
+        </div>
+    </div>
+
+    <div class="col-lg-3">
+        <div class="Group1 mb-3" style="width: 256px; height: 400px; position: relative">
+            <div class="Rectangle7" style="width: 256px; height: 400px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 8px; border: 0.40px #A4A4A4 solid">
+                <img src="img/shopping-img-4.svg" alt="" style="margin-left: 40px; margin-top: 40px;">
+            </div>
+            <div class="BlueEssencePlainPolo" style="left: 20px; top: 255px; position: absolute; color: black; font-size: 16px; font-weight: 700; word-wrap: break-word">Sunburst Classic Polo with Azure <br> <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span></div>
+            <div class="99900" style="left: 24px; top: 310px; position: absolute; color: black; font-size: 16px; font-weight: 700; word-wrap: break-word">₱ 699.00</div>
+            <div class="Group2" style="width: 90px; height: 18px; left: 24px; top: 286px; position: absolute">
+            </div>
+            <div class="Rectangle15" style="width: 108px; height: 32px; left: 22px; top: 351px; position: absolute; background: #E68989; border-radius: 8px"></div>
+            <div class="BuyNow" style="left: 33px; top: 357px; position: absolute; color: white; font-size: 16px; font-weight: 700; word-wrap: break-word">BUY NOW</div>
+        </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- /Products -->
+
+
+<!-- About -->
+<section class="bg-dark bg-gradient text-white py-5">
+  <div class="container text-center ">
+    <div class="row">
+      <div class="m-5 p-5">
+        <h2>ABOUT US</h2>
+        <p>Shirtify, situated at Sariaya, Quezon, is your one-stop-shop for all types of shirts. Our shirts are available in many different ranges and varieties. The demand for our products is increasing rapidly owing to their beautiful designs, finest quality, and attractive colors. Shirtify is committed to magnifying customers' satisfaction, and that belief has helped us garner multiple clients, which continues to grow every day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /About -->
+
+
+<!-- Category -->
+<section class="category" style="padding: 50px 0;">
+  <div class="container position-relative">
+    <h2 class="text-center">CATEGORY</h2>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="image-containers text-center">
+          <img src="img/categ1.svg" alt="">
+          <a href="pages/shopping-description.html"><button class="overlay-button">Plain Polo Shirt</button></a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="image-containers text-center">
+          <img src="img/categ2.svg" alt="">
+          <a href="pages/shopping-description.html"><button class="overlay-button">Designed Polo Shirt</button></a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="image-containers text-center">
+          <img src="img/categ3.svg" alt="">
+          <a href="pages/shopping-description.html"><button class="overlay-button">Plain Shirt</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Category -->
+
+
+<!-- Footer -->
+<section>
+  <footer class="bg-success text-white text-center text-lg-start ">
+    <h2 class="text-center m-5 p-5">CONTACT US</h2>
+    <div class="container p-4 d-flex justify-content-center">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">ADDRESS</h5>
+          <p>Sariaya, Quezon Philippines</p>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">PHONE NUMBER</h5>
+          <p>+63912345678</p>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">EMAIL</h5>
+          <p>shirtify01@gmaill.com</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center py-3" id="copyright">
+      <!-- Copyright year will appear here -->
+    </p>
+    
+    <script>
+      const currentYear = new Date().getFullYear();
+      const copyright = document.getElementById('copyright');
+      copyright.textContent = `Copyrights © ${currentYear} Shirtify`;
+    </script>
+  </footer>
+</section>
+<!-- /Footer -->
+
+
+    <!-- JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  </body>
+</html>

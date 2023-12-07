@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Shirtify</title>
+    <link rel="icon" href="../img/mdb-favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/font-poppins.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid">
+      <a class="navbar-brand ml-5 mt-lg-0 me-auto" href="../index.html" style="font-size: 24px; font-weight: bold;">SHIRTIFY</a>
+      <button class="navbar-toggler" type="button" onclick="toggleNavbar()" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Search input -->
+      <div class="input-group rounded-3 me-3 mb-2 mb-lg-0">
+        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+        </span>
+      </div>
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="shopping-page.html">SHOP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">CART</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="customer-pfp.html">PROFILE</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Right elements -->
+
+      <!-- Cart icon -->
+      <a class="text-reset me-3" href="cart.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+        </svg>
+      </a>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</div>
+</nav>
+<script>
+  function toggleNavbar() {
+    var navbarCollapse = document.getElementById("navbarSupportedContent");
+    if (navbarCollapse.classList.contains("show")) {
+      navbarCollapse.classList.remove("show");
+    } else {
+      navbarCollapse.classList.add("show");
+    }
+  }
+</script>
+
+<div class="container">
+    <div class="Cart" style="width: 1440px; height: 1887px; padding-left: 160px; padding-right: 160px; padding-top: 80px; padding-bottom: 80px; background: white; flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+        <div class="Title" style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 40px; display: flex">
+          <div class="CheckOut" style="color: black; font-size: 54px; font-weight: 500; line-height: 58px; word-wrap: break-word">Check Out</div>
+          <div class="Process" style="justify-content: flex-start; align-items: flex-start; gap: 32px; display: inline-flex">
+            <div class="Process" style="width: 256px; padding-bottom: 26px; border-bottom: 2px #38CB89 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+              <div class="Frame75" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 17px; display: inline-flex">
+                <div class="Frame73" style="padding: 8px; background: #38CB89; border-radius: 40px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+                  <div class="IconsCheckLine" style="width: 24px; height: 24px; padding-left: 6px; padding-right: 6px; padding-top: 8px; padding-bottom: 8px; justify-content: center; align-items: center; display: inline-flex">
+                    <div class="Check" style="width: 12px; height: 8px; border: 2px #FCFCFD solid"></div>
+                  </div>
+                </div>
+                <div class="ShoppingCart" style="flex: 1 1 0; color: #38CB89; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">Shopping cart</div>
+              </div>
+            </div>
+            <div class="Process" style="width: 256px; padding-bottom: 26px; border-bottom: 2px #141718 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+              <div class="Frame75" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 17px; display: inline-flex">
+                <div class="Frame73" style="padding-left: 15px; padding-right: 15px; padding-top: 8px; padding-bottom: 8px; background: #23262F; border-radius: 40px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+                  <div style="text-align: center; color: #FCFCFD; font-size: 16px; font-weight: 600; line-height: 24px; word-wrap: break-word">2</div>
+                </div>
+                <div class="CheckoutDetails" style="flex: 1 1 0; color: #23262F; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">Checkout details</div>
+              </div>
+            </div>
+            <div class="Process" style="width: 256px; padding-bottom: 26px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+              <div class="Frame75" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 17px; display: inline-flex">
+                <div class="Frame73" style="padding-left: 15px; padding-right: 15px; padding-top: 8px; padding-bottom: 8px; background: #B1B5C3; border-radius: 40px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+                  <div style="text-align: center; color: #FCFCFD; font-size: 16px; font-weight: 600; line-height: 24px; word-wrap: break-word">3</div>
+                </div>
+                <div class="OrderComplete" style="flex: 1 1 0; color: #B1B5C3; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">Order complete</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Cart" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+          <div class="Cart" style="padding-top: 80px; padding-bottom: 80px; justify-content: flex-start; align-items: flex-start; gap: 64px; display: inline-flex">
+            <div class="Form" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+              <div class="Form" style="height: 372px; padding-left: 24px; padding-right: 24px; padding-top: 40px; padding-bottom: 40px; border-radius: 4px; border: 1px #6C7275 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+                <div class="ContactInfomation" style="color: black; font-size: 20px; font-weight: 500; line-height: 28px; word-wrap: break-word">Contact Infomation</div>
+                <div class="Name" style="width: 595px; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                  <div class="Name" style="width: 285.50px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+                    <div class="FirstName" style="color: #6C7275; font-size: 12px; font-weight: 700; text-transform: uppercase; line-height: 12px; word-wrap: break-word">fIRST Name</div>
+                    <input type="text" id="firstName" placeholder="First Name" style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                  </div>
+                  <div class="Name" style="width: 285.50px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+                    <div class="LastName" style="color: #6C7275; font-size: 12px; font-weight: 700; text-transform: uppercase; line-height: 12px; word-wrap: break-word">lAST Name</div>
+                    <input type="text" id="lastName" placeholder="Last Name" style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                  </div>
+                </div>
+                <div class="Email" style="height: 64px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                  <div class="PhoneNumber" style="color: #6C7275; font-size: 12px; font-weight: 700; text-transform: uppercase; line-height: 12px; word-wrap: break-word">Phone Number</div>
+                  <input type="number" id="number" placeholder="Phone number" oninput="if(this.value < 0) this.value = ''" style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                </div>
+                <div class="Email" style="height: 64px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                  <div class="EmailAddress" style="color: #6C7275; font-size: 12px; font-weight: 700; text-transform: uppercase; line-height: 12px; word-wrap: break-word">Email address</div>
+                  <input type="email" id="email" placeholder="Your Email" style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                </div>
+              </div>
+              <div class="Form" style="height: 510px; padding-left: 24px; padding-right: 24px; padding-top: 40px; padding-bottom: 40px; border-radius: 4px; border: 1px #6C7275 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+                <div class="ShippingAddress" style="color: #141718; font-size: 20px; font-weight: 500; line-height: 28px; word-wrap: break-word">Shipping Address</div>
+                <div class="Street" style="height: 64px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                  <div class="StreetAddress" style="color: #6C7275; font-size: 12px; font-weight: 700; text-transform: uppercase; line-height: 12px; word-wrap: break-word">Street Address *</div>
+                  <input type="text" id="streetAddress" placeholder="Street Address" style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                </div>
+                <div class="Country" style="height: 64px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                  <div class="Country" style="color: #6C7275; font-size: 12px; font-weight: 700; text-transform: uppercase; line-height: 12px; word-wrap: break-word">Country *</div>
+                  <select class="form-select" id="country" name="country">
+                    <option>Country</option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AX">Aland Islands</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="AD">Andorra</option>
+                    <option value="AO">Angola</option>
+                    <option value="AI">Anguilla</option>
+                    <option value="AQ">Antarctica</option>
+                    <option value="AG">Antigua and Barbuda</option>
+                    <option value="AR">Argentina</option>
+                    <option value="AM">Armenia</option>
+                    <option value="AW">Aruba</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaijan</option>
+                    <option value="BS">Bahamas</option>
+                    <option value="BH">Bahrain</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="BB">Barbados</option>
+                    <option value="BY">Belarus</option>
+                    <option value="BE">Belgium</option>
+                    <option value="BZ">Belize</option>
+                    <option value="BJ">Benin</option>
+                    <option value="BM">Bermuda</option>
+                    <option value="BT">Bhutan</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                    <option value="BA">Bosnia and Herzegovina</option>
+                    <option value="BW">Botswana</option>
+                    <option value="BV">Bouvet Island</option>
+                    <option value="BR">Brazil</option>
+                    <option value="IO">British Indian Ocean Territory</option>
+                    <option value="BN">Brunei Darussalam</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="BF">Burkina Faso</option>
+                    <option value="BI">Burundi</option>
+                    <option value="KH">Cambodia</option>
+                    <option value="CM">Cameroon</option>
+                    <option value="CA">Canada</option>
+                    <option value="CV">Cape Verde</option>
+                    <option value="KY">Cayman Islands</option>
+                    <option value="CF">Central African Republic</option>
+                    <option value="TD">Chad</option>
+                    <option value="CL">Chile</option>
+                    <option value="CN">China</option>
+                    <option value="CX">Christmas Island</option>
+                    <option value="CC">Cocos (Keeling) Islands</option>
+                    <option value="CO">Colombia</option>
+                    <option value="KM">Comoros</option>
+                    <option value="CG">Congo</option>
+                    <option value="CD">Congo, Democratic Republic of the Congo</option>
+                    <option value="CK">Cook Islands</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CI">Cote D'Ivoire</option>
+                    <option value="HR">Croatia</option>
+                    <option value="CU">Cuba</option>
+                    <option value="CW">Curacao</option>
+                    <option value="CY">Cyprus</option>
+                    <option value="CZ">Czech Republic</option>
+                    <option value="DK">Denmark</option>
+                    <option value="DJ">Djibouti</option>
+                    <option value="DM">Dominica</option>
+                    <option value="DO">Dominican Republic</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="EG">Egypt</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="GQ">Equatorial Guinea</option>
+                    <option value="ER">Eritrea</option>
+                    <option value="EE">Estonia</option>
+                    <option value="ET">Ethiopia</option>
+                    <option value="FK">Falkland Islands (Malvinas)</option>
+                    <option value="FO">Faroe Islands</option>
+                    <option value="FJ">Fiji</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+                    <option value="GF">French Guiana</option>
+                    <option value="PF">French Polynesia</option>
+                    <option value="TF">French Southern Territories</option>
+                    <option value="GA">Gabon</option>
+                    <option value="GM">Gambia</option>
+                    <option value="GE">Georgia</option>
+                    <option value="DE">Germany</option>
+                    <option value="GH">Ghana</option>
+                    <option value="GI">Gibraltar</option>
+                    <option value="GR">Greece</option>
+                    <option value="GL">Greenland</option>
+                    <option value="GD">Grenada</option>
+                    <option value="GP">Guadeloupe</option>
+                    <option value="GU">Guam</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="GG">Guernsey</option>
+                    <option value="GN">Guinea</option>
+                    <option value="GW">Guinea-Bissau</option>
+                    <option value="GY">Guyana</option>
+                    <option value="HT">Haiti</option>
+                    <option value="HM">Heard Island and Mcdonald Islands</option>
+                    <option value="VA">Holy See (Vatican City State)</option>
+                    <option value="HN">Honduras</option>
+                    <option value="HK">Hong Kong</option>
+                    <option value="HU">Hungary</option>
+                    <option value="IS">Iceland</option>
+                    <option value="IN">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IR">Iran, Islamic Republic of</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="IE">Ireland</option>
+                    <option value="IM">Isle of Man</option>
+                    <option value="IL">Israel</option>
+                    <option value="IT">Italy</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="JP">Japan</option>
+                    <option value="JE">Jersey</option>
+                    <option value="JO">Jordan</option>
+                    <option value="KZ">Kazakhstan</option>
+                    <option value="KE">Kenya</option>
+                    <option value="KI">Kiribati</option>
+                    <option value="KP">Korea, Democratic People's Republic of</option>
+                    <option value="KR">Korea, Republic of</option>
+                    <option value="XK">Kosovo</option>
+                    <option value="KW">Kuwait</option>
+                    <option value="KG">Kyrgyzstan</option>
+                    <option value="LA">Lao People's Democratic Republic</option>
+                    <option value="LV">Latvia</option>
+                    <option value="LB">Lebanon</option>
+                    <option value="LS">Lesotho</option>
+                    <option value="LR">Liberia</option>
+                    <option value="LY">Libyan Arab Jamahiriya</option>
+                    <option value="LI">Liechtenstein</option>
+                    <option value="LT">Lithuania</option>
+                    <option value="LU">Luxembourg</option>
+                    <option value="MO">Macao</option>
+                    <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                    <option value="MG">Madagascar</option>
+                    <option value="MW">Malawi</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="MV">Maldives</option>
+                    <option value="ML">Mali</option>
+                    <option value="MT">Malta</option>
+                    <option value="MH">Marshall Islands</option>
+                    <option value="MQ">Martinique</option>
+                    <option value="MR">Mauritania</option>
+                    <option value="MU">Mauritius</option>
+                    <option value="YT">Mayotte</option>
+                    <option value="MX">Mexico</option>
+                    <option value="FM">Micronesia, Federated States of</option>
+                    <option value="MD">Moldova, Republic of</option>
+                    <option value="MC">Monaco</option>
+                    <option value="MN">Mongolia</option>
+                    <option value="ME">Montenegro</option>
+                    <option value="MS">Montserrat</option>
+                    <option value="MA">Morocco</option>
+                    <option value="MZ">Mozambique</option>
+                    <option value="MM">Myanmar</option>
+                    <option value="NA">Namibia</option>
+                    <option value="NR">Nauru</option>
+                    <option value="NP">Nepal</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="AN">Netherlands Antilles</option>
+                    <option value="NC">New Caledonia</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="NE">Niger</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="NU">Niue</option>
+                    <option value="NF">Norfolk Island</option>
+                    <option value="MP">Northern Mariana Islands</option>
+                    <option value="NO">Norway</option>
+                    <option value="OM">Oman</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PW">Palau</option>
+                    <option value="PS">Palestinian Territory, Occupied</option>
+                    <option value="PA">Panama</option>
+                    <option value="PG">Papua New Guinea</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Peru</option>
+                    <option value="PH">Philippines</option>
+                    <option value="PN">Pitcairn</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="QA">Qatar</option>
+                    <option value="RE">Reunion</option>
+                    <option value="RO">Romania</option>
+                    <option value="RU">Russian Federation</option>
+                    <option value="RW">Rwanda</option>
+                    <option value="BL">Saint Barthelemy</option>
+                    <option value="SH">Saint Helena</option>
+                    <option value="KN">Saint Kitts and Nevis</option>
+                    <option value="LC">Saint Lucia</option>
+                    <option value="MF">Saint Martin</option>
+                    <option value="PM">Saint Pierre and Miquelon</option>
+                    <option value="VC">Saint Vincent and the Grenadines</option>
+                    <option value="WS">Samoa</option>
+                    <option value="SM">San Marino</option>
+                    <option value="ST">Sao Tome and Principe</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="SN">Senegal</option>
+                    <option value="RS">Serbia</option>
+                    <option value="CS">Serbia and Montenegro</option>
+                    <option value="SC">Seychelles</option>
+                    <option value="SL">Sierra Leone</option>
+                    <option value="SG">Singapore</option>
+                    <option value="SX">Sint Maarten</option>
+                    <option value="SK">Slovakia</option>
+                    <option value="SI">Slovenia</option>
+                    <option value="SB">Solomon Islands</option>
+                    <option value="SO">Somalia</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="GS">South Georgia and the South Sandwich Islands</option>
+                    <option value="SS">South Sudan</option>
+                    <option value="ES">Spain</option>
+                    <option value="LK">Sri Lanka</option>
+                    <option value="SD">Sudan</option>
+                    <option value="SR">Suriname</option>
+                    <option value="SJ">Svalbard and Jan Mayen</option>
+                    <option value="SZ">Swaziland</option>
+                    <option value="SE">Sweden</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="SY">Syrian Arab Republic</option>
+                    <option value="TW">Taiwan, Province of China</option>
+                    <option value="TJ">Tajikistan</option>
+                    <option value="TZ">Tanzania, United Republic of</option>
+                    <option value="TH">Thailand</option>
+                    <option value="TL">Timor-Leste</option>
+                    <option value="TG">Togo</option>
+                    <option value="TK">Tokelau</option>
+                    <option value="TO">Tonga</option>
+                    <option value="TT">Trinidad and Tobago</option>
+                    <option value="TN">Tunisia</option>
+                    <option value="TR">Turkey</option>
+                    <option value="TM">Turkmenistan</option>
+                    <option value="TC">Turks and Caicos Islands</option>
+                    <option value="TV">Tuvalu</option>
+                    <option value="UG">Uganda</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="US">United States</option>
+                    <option value="UM">United States Minor Outlying Islands</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="UZ">Uzbekistan</option>
+                    <option value="VU">Vanuatu</option>
+                    <option value="VE">Venezuela</option>
+                    <option value="VN">Viet Nam</option>
+                    <option value="VG">Virgin Islands, British</option>
+                    <option value="VI">Virgin Islands, U.s.</option>
+                    <option value="WF">Wallis and Futuna</option>
+                    <option value="EH">Western Sahara</option>
+                    <option value="YE">Yemen</option>
+                    <option value="ZM">Zambia</option>
+                    <option value="ZW">Zimbabwe</option>
+                </select>
+                </div>
+                <div class="Street" style="height: 64px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                  <div class="TownCity" style="color: #6C7275; font-size: 12px; font-weight: 700; text-transform: uppercase; line-height: 12px; word-wrap: break-word">Town / City *</div>
+                  <input type="text" id="town-city" placeholder="Town / City" style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                </div>
+                <div class="State" style="width: 595px; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                  <div class="Name" style="width: 285.50px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+                    <div class="State" style="color: #6C7275; font-size: 12px; font-weight: 700; text-transform: uppercase; line-height: 12px; word-wrap: break-word">State</div>
+                    <input type="text" id="state" placeholder="State" style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                  </div>
+                  <div class="Name" style="width: 285.50px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+                    <div class="ZipCode" style="color: #6C7275; font-size: 12px; font-weight: 700; text-transform: uppercase; line-height: 12px; word-wrap: break-word">Zip Code</div>
+                    <input type="number" id="zipCode" placeholder="Zip Code" style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                  </div>
+                </div>
+                <div class="DifferentAddress" style="justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex">
+                  <input type="checkbox" id="checkbox" style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                  <div class="UseADifferentBillingAddressOptional" style="color: #6C7275; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Use a different billing address (optional)</div>
+                </div>
+              </div>
+              <div class="Form" style="height: 468px; padding-left: 24px; padding-right: 24px; padding-top: 40px; padding-bottom: 40px; border-radius: 4px; border: 1px #6C7275 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+                <div class="PaymentMethod" style="color: #141718; font-size: 20px; font-weight: 500; line-height: 28px; word-wrap: break-word">Payment method</div>
+                <div class="Card" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+                  <form class="Frame741" style="padding-bottom: 32px; border-bottom: 1px #6C7275 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+                    <div class="Elements" style="width: 595px; padding-left: 16px; padding-right: 16px; padding-top: 13px; padding-bottom: 13px; background: #F3F5F7; border-radius: 4px; border: 1px #141718 solid; justify-content: flex-start; align-items: center; gap: 395px; display: inline-flex">
+                      <div class="Content" style="flex: 1 1 0; height: 26px; justify-content: space-between; align-items: center; display: flex">
+                        <div class="RadioButton" style="justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+                          <input type="radio" id="option1" name="group1" style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex" value="option1">
+                          <label for="option1" class="PayByCardCredit" style="color: #141718; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Pay by Card Credit</label>
+                        </div>
+                        <div class="FinanceAndPaymentOutlineMoney" style="width: 24px; height: 24px; position: relative">
+                          <div class="Rectangle856" style="width: 20px; height: 16px; left: 2px; top: 4px; position: absolute; border-radius: 4px; border: 1.50px #141718 solid"></div>
+                          <div class="Ellipse730" style="width: 4px; height: 4px; left: 10px; top: 14px; position: absolute; border-radius: 9999px; border: 1.50px #141718 solid"></div>
+                          <div class="Ellipse732" style="width: 2px; height: 2px; left: 17px; top: 13px; position: absolute; background: #141718; border-radius: 9999px"></div>
+                          <div class="Ellipse733" style="width: 2px; height: 2px; left: 5px; top: 13px; position: absolute; background: #141718; border-radius: 9999px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="Elements" style="width: 595px; padding-left: 16px; padding-right: 16px; padding-top: 13px; padding-bottom: 13px; background: #FEFEFE; border-radius: 4px; border: 1px #6C7275 solid; justify-content: flex-start; align-items: center; gap: 395px; display: inline-flex">
+                      <div class="Content" style="flex: 1 1 0; height: 26px; justify-content: flex-start; align-items: center; gap: 346px; display: flex">
+                        <div class="RadioButton" style="justify-content: flex-start; align-items: center; gap: 12px; display: flex">
+                          <input type="radio" id="option2" name="group1" style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex" value="option2">
+                          <label for="option2" class="PayByCardCredit" style="color: #141718; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Paypal</label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="Street" style="height: 64px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                    <div class="CardNumber" style="color: #6C7275; font-size: 12px; font-weight: 700; text-transform: uppercase; line-height: 12px; word-wrap: break-word">Card Number</div>
+                    <input 
+                      type="number" 
+                      id="cardNumber" 
+                      name="cardNumber" 
+                      placeholder="1234 1234 1234 1234" 
+                      oninput="if(this.value < 0) this.value = ''"
+                      style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex"
+                    >
+                  </div>
+                  <div class="State" style="width: 595px; justify-content: space-between; align-items: flex-start; display: inline-flex">
+                    <div class="Name" style="width: 285.50px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+                      <div class="ExpirationDate" style="color: #6C7275; font-size: 12px; font-weight: 700; text-transform: uppercase; line-height: 12px; word-wrap: break-word">Expiration date</div>
+                      <input type="number" id="mm-yy" name="mm-yy" oninput="if(this.value < 0) this.value = ''" placeholder="MM/YY" style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                    </div>
+                    <div class="Name" style="width: 285.50px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+                      <div class="Cvc" style="color: #6C7275; font-size: 12px; font-weight: 700; text-transform: uppercase; line-height: 12px; word-wrap: break-word">CVC</div>
+                      <input type="number" id="cvc" name="cvc" oninput="if(this.value < 0) this.value = ''" placeholder="CVC Code" style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="order-completed.html"><button type="button" class="Button" style="width: 643px; padding-left: 40px; padding-right: 40px; padding-top: 12px; padding-bottom: 12px; background: black; color: white; border-radius: 8px; justify-content: center; align-items: center; gap: 8px; display: inline-flex" onmouseover="this.style.transform='scale(1.1)';"
+              onmouseout="this.style.transform='scale(1)';">
+                Place Order
+            </button></a>
+            </div>
+            <div class="ElementsCheckoutOrderSummary" style="width: 413px; padding-left: 24px; padding-right: 24px; padding-top: 16px; padding-bottom: 16px; background: white; border-radius: 6px; border: 1px #6C7275 solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: inline-flex">
+              <div class="OrderSummary" style="align-self: stretch; color: #121212; font-size: 28px; font-weight: 500; line-height: 34px; word-wrap: break-word">Order summary</div>
+              <div class="ProductsCoupon" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+                <div class="ElementsCartProductCell" style="width: 376px; padding-top: 24px; padding-bottom: 24px; border-bottom: 1px #E8ECEF solid; justify-content: space-between; align-items: center; display: inline-flex">
+                  <div class="CartItem" style="width: 376px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+                    <div class="Content" style="width: 316px; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                      <img class="Image3" style="width: 85px; height: 94px" src="../img/shopping-img-3.svg" />
+                      <div class="Info" style="width: 267px; align-self: stretch; justify-content: space-between; align-items: flex-start; display: flex">
+                        <div class="Product" style="width: 200px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; display: inline-flex">
+                          <div class="PureCanvasClassicWhiteTee" style="width: 195px; height: 42px; color: #141718; font-size: 12px; font-weight: 600; line-height: 22px; word-wrap: break-word">Pure Canvas Classic <br/>White Tee</div>
+                          <div class="ColorDefault" style="color: #6C7275; font-size: 12px; font-weight: 400; line-height: 20px; word-wrap: break-word">Color: Default</div>
+                          <div class="QuantityButtonSmall" style="width: 80px; height: 32px; padding-left: 8px; padding-right: 8px; padding-top: 12px; padding-bottom: 12px; border-radius: 4px; border: 1px #6C7275 solid; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: flex">
+                            <div class="Content" style="width: 64px; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+                              <div class="IconMinus" style="flex: 1 1 0; height: 16px; padding-left: 3.23px; padding-right: 3.44px; justify-content: center; align-items: center; display: inline-flex">
+                                <div class="Vector" style="width: 9.33px; height: 0px; border: 0.75px #121212 solid"></div>
+                              </div>
+                              <div class="GetStarted" style="text-align: center; color: #121212; font-size: 12px; font-weight: 600; line-height: 20px; word-wrap: break-word">2</div>
+                              <div class="IconAdd" style="flex: 1 1 0; height: 16px; padding: 2.96px; justify-content: center; align-items: center; display: inline-flex">
+                                <img class="Union" style="width: 10.08px; height: 10.08px" src="" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="Price" style="flex-direction: column; justify-content: center; align-items: flex-end; gap: 8px; display: inline-flex">
+                          <div class="179800" style="text-align: right; color: #02021D; font-size: 14px; font-weight: 700; line-height: 30px; word-wrap: break-word">₱ 1798.00</div>
+                          <div class="IconsCloseLine" style="width: 24px; height: 24px; padding: 5px; justify-content: center; align-items: center; display: inline-flex">
+                            <div class="Shape" style="width: 14px; height: 14px; background: white"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ElementsCartProductCell" style="width: 376px; padding-top: 24px; padding-bottom: 24px; border-bottom: 1px #E8ECEF solid; justify-content: space-between; align-items: center; display: inline-flex">
+                  <div class="CartItem" style="width: 376px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+                    <div class="Content" style="width: 316px; justify-content: flex-start; align-items: center; gap: 16px; display: inline-flex">
+                      <img class="Fa7dc74bb5dd1d6df0e5ea61ca36adRemovebgPreview2" style="width: 94px; height: 107px" src="../img/shopping-img-2.svg" />
+                      <div class="Info" style="width: 289px; height: 79px; justify-content: space-between; align-items: flex-start; display: flex">
+                        <div class="Product" style="width: 169px; height: 90px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; display: inline-flex">
+                          <div class="EcoPoloGreenOasis" style="width: 210px; height: 22px; color: #141718; font-size: 14px; font-weight: 600; line-height: 22px; word-wrap: break-word">Eco Polo Green Oasis</div>
+                          <div class="ColorDefault" style="color: #6C7275; font-size: 12px; font-weight: 400; line-height: 20px; word-wrap: break-word">Color: Default</div>
+                          <div class="QuantityButtonSmall" style="width: 80px; height: 32px; padding-left: 8px; padding-right: 8px; padding-top: 12px; padding-bottom: 12px; border-radius: 4px; border: 1px #6C7275 solid; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: flex">
+                            <div class="Content" style="width: 64px; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+                              <div class="IconMinus" style="flex: 1 1 0; height: 16px; padding-left: 3.23px; padding-right: 3.44px; justify-content: center; align-items: center; display: inline-flex">
+                                <div class="Vector" style="width: 9.33px; height: 0px; border: 0.75px #121212 solid"></div>
+                              </div>
+                              <div class="GetStarted" style="text-align: center; color: #121212; font-size: 12px; font-weight: 600; line-height: 20px; word-wrap: break-word">2</div>
+                              <div class="IconAdd" style="flex: 1 1 0; height: 16px; padding: 2.96px; justify-content: center; align-items: center; display: inline-flex">
+                                <img class="Union" style="width: 10.08px; height: 10.08px" src="https://via.placeholder.com/10x10" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="139800" style="width: 84px; height: 19px; text-align: right; color: #121212; font-size: 14px; font-weight: 700; line-height: 22px; word-wrap: break-word">₱ 1398.00</div>
+                        <div class="Price" style="flex-direction: column; justify-content: center; align-items: flex-end; gap: 8px; display: inline-flex">
+                          <div class="IconsCloseLine" style="width: 24px; height: 24px; padding: 5px; justify-content: center; align-items: center; display: inline-flex">
+                            <div class="Shape" style="width: 14px; height: 14px; background: white"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="OrderSummaryCouponField" style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+                  <div class="FormInput" style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                    <input type="text" id="input" placeholder="Input" style="align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; background: white; border-radius: 6px; overflow: hidden; border: 1px #CBCBCB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                  </div>
+                  <button class="Button" style="padding-left: 26px; padding-right: 26px; padding-top: 12px; padding-bottom: 12px; background: #E870AC; border-radius: 8px; justify-content: center; align-items: center; gap: 8px; display: flex" onmouseover="this.style.transform='scale(1.1)';"
+                  onmouseout="this.style.transform='scale(1)';">
+                    <div class="ShowMore" style="text-align: center; color: white; font-size: 16px; font-weight: 500; line-height: 28px; word-wrap: break-word" >Apply</div>
+                </button>
+                </div>
+              </div>
+              <div class="Fields" style="align-self: stretch; height: 208px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                <div class="ElementsOrderSummaryInfoField" style="align-self: stretch; height: 52px; padding-top: 13px; padding-bottom: 13px; border-bottom: 1px #E8ECEF solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div class="Content" style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 160px; display: inline-flex">
+                    <div class="TitleAmount" style="justify-content: center; align-items: flex-start; gap: 113px; display: flex">
+                      <div class="Title" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                        <input type="checkbox" name="" id="">
+                        <div class="Jenkatemw" style="color: #141718; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Discount</div>
+                      </div>
+                      <div class="2500Remove" style="text-align: right"><span style="color: #38CB89; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">-</span><span style="color: #38CB89; font-size: 16px; font-weight: 700; line-height: 26px; word-wrap: break-word">₱1</span><span style="color: #38CB89; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">25.00 [Remove]</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ElementsOrderSummaryInfoField" style="align-self: stretch; height: 52px; padding-top: 13px; padding-bottom: 13px; border-bottom: 1px #E8ECEF solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div class="Content" style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 160px; display: inline-flex">
+                    <div class="TitleAmount" style="justify-content: center; align-items: flex-start; gap: 264px; display: flex">
+                      <div class="Title" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                        <div class="Shipping" style="color: #141718; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Shipping</div>
+                      </div>
+                      <div class="Free" style="text-align: right; color: #141718; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">Free</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ElementsOrderSummaryInfoField" style="align-self: stretch; height: 52px; padding-top: 13px; padding-bottom: 13px; border-bottom: 1px #E8ECEF solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div class="Content" style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 160px; display: inline-flex">
+                    <div class="TitleAmount" style="justify-content: center; align-items: flex-start; gap: 220px; display: flex">
+                      <div class="Title" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                        <div class="Shipping" style="color: #141718; font-size: 16px; font-weight: 400; line-height: 26px; word-wrap: break-word">Subtotal</div>
+                      </div>
+                      <div class="Free" style="text-align: right; color: #02021D; font-size: 16px; font-weight: 600; line-height: 26px; word-wrap: break-word">₱ 3196.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ElementsOrderSummaryInfoField" style="align-self: stretch; height: 52px; padding-top: 13px; padding-bottom: 13px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+                  <div class="Content" style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 160px; display: inline-flex">
+                    <div class="TitleAmount" style="justify-content: center; align-items: flex-start; gap: 221px; display: flex">
+                      <div class="Title" style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+                        <div class="Shipping" style="color: #141718; font-size: 20px; font-weight: 500; line-height: 28px; word-wrap: break-word">Total</div>
+                      </div>
+                      <div class="Free" style="text-align: right; color: #02021D; font-size: 18px; font-weight: 700; line-height: 26px; word-wrap: break-word">₱ 3196.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<!-- Footer -->
+<section>
+  <footer class="bg-success text-white text-center text-lg-start ">
+    <h2 class="text-center m-5 p-5">CONTACT US</h2>
+    <div class="container p-4 d-flex justify-content-center">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">ADDRESS</h5>
+          <p>Sariaya, Quezon Philippines</p>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">PHONE NUMBER</h5>
+          <p>+63912345678</p>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">EMAIL</h5>
+          <p>shirtify01@gmaill.com</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center py-3" id="copyright">
+      <!-- Copyright year will appear here -->
+    </p>
+    
+    <script>
+      const currentYear = new Date().getFullYear();
+      const copyright = document.getElementById('copyright');
+      copyright.textContent = `Copyrights © ${currentYear} Shirtify`;
+    </script>
+  </footer>
+</section>
+<!-- /Footer -->
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  </body>
+</html>

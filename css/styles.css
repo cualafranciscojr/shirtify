@@ -1,0 +1,50 @@
+.bg-light-gray {
+    background-color: #635e5e; /* Set your desired light gray color */
+    border-radius: 20px; /* Set border-radius as desired */
+    position: relative;
+}
+
+.img-equal-size {
+    max-width: 100%; /* Ensures images maintain responsiveness */
+    height: auto; /* Allows images to scale proportionally */
+    width: 100%; /* Ensures the image fills the container */
+}
+
+.text-wrap {
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+.image-container {
+    position: relative;
+    margin: 0 10px; /* Adjust spacing between images */
+  }
+
+
+  /* CSS for the semi-transparent button overlay and gray background */
+  .image-containers {
+    position: relative;
+    margin: 0 10px; /* Adjust spacing between images */
+    background-color: #ddd; /* Gray background color */
+    padding: 10px; /* Optional padding for images */
+    border-radius: 5px; /* Optional border radius for images */
+  }
+
+  .overlay-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency by changing the alpha value */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Optional border radius for buttons */
+  }
+
+  .overlay-button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+  }
